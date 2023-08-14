@@ -1,14 +1,12 @@
+
 package day0811;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class Main_15686_치킨배달 {
-	// 조합 안에서 BFS
-	
 	public static int M, data[][], Min, selectedChicken[][];
 	public static LinkedList<int[]> chicken = new LinkedList<>();
 	public static LinkedList<int[]> house = new LinkedList<>();
@@ -33,7 +31,6 @@ public class Main_15686_치킨배달 {
 		
 		for (int i = 0; i < selectedChicken.length; i++) {
 			for (int h = 0; h < house.size(); h++) {
-//				selectedChicken[j] = ;
 				int temp = Math.abs(selectedChicken[i][0]-house.get(h)[0])+
 						   Math.abs(selectedChicken[i][1]-house.get(h)[1]);
 				result[h] = Math.min(result[h], temp);
