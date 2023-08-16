@@ -48,7 +48,7 @@ public class boj_2206_벽부수고이동하기 {
 			}
 		}
 		
-//		dataReset();
+		dataReset();
 		bfs();
 
 		
