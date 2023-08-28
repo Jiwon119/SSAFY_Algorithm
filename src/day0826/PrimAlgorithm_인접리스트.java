@@ -16,12 +16,6 @@ import java.util.StringTokenizer;
 1 3 3
 
 3
-
-1. 간선을 저장하는 클래스 생성
-2. 우선순위 큐를 이용하여 간선 정렬
-3. visited 배열을 만들어서 정점의 방문체크를 해주고
-4. 가중치가 낮은 간선부터 트리에 추가하면서 값 갱신해줌
-
 */
 
 public class PrimAlgorithm_인접리스트 {
@@ -41,7 +35,6 @@ public class PrimAlgorithm_인접리스트 {
 			return Integer.compare(this.cost, o.cost);
 		}
 	}
-	
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -75,7 +68,6 @@ public class PrimAlgorithm_인접리스트 {
 			long result = 0;
 			int cnt = 0;
 			
-			// 0:간선 1:가중치
 			PriorityQueue<Edge> pq = new PriorityQueue<Edge>();
 			pq.add(new Edge(1, 0));
 			
